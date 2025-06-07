@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Partner With Us – BrightVolt Energy</title>
+  <link rel="stylesheet" href="css/partner.css" type="text/css" />
+</head>
+<body>
+  <header>
+  <div class="container">
+   
+<nav>
+    <div class="navbar">
+       <button class="nav-toggle" id="navToggle">☰</button>
+        <ul class="nav-links left-links">
+       <li> <a href="index.html">Home</a></li>
+       <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="logo">
+            <img src="Assets/Premium Photo _ Ecology concept Power energy in nature hand holding lightbulb with solar with icons energy sources for renewable sustainable development.jpeg" alt="Logo" class="logo">
+        </div>
+        <ul class="nav-links right-links">
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="Ournanny.html">Solutions</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+  <main class="partner-container">
+    <h1>Partner With BrightVolt</h1>
+    <p>Let's collaborate to bring sustainable energy solutions to more people.</p>
+    <form class="partner-form" action="submit-partner.html" method="POST">
+      <label for="company">Company Name</label>
+      <input type="text" id="company" name="company" required>
+
+      <label for="contact">Contact Person</label>
+      <input type="text" id="contact" name="contact" required>
+
+      <label for="email">Business Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="partnership">Type of Partnership</label>
+      <select id="partnership" name="partnership" required>
+        <option value="">Select type</option>
+        <option value="supplier">Equipment Supplier</option>
+        <option value="distributor">Distributor</option>
+        <option value="financer">Financing Partner</option>
+        <option value="contractor">Installation Contractor</option>
+      </select>
+
+      <label for="message">Proposal or Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Submit Partnership Request</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>&copy; 2025 BrightVolt Energy. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

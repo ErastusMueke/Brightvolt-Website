@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | BrightVolt Energy</title>
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <header>
+  <div class="container">
+   
+<nav>
+    <div class="navbar">
+       <button class="nav-toggle" id="navToggle">☰</button>
+        <ul class="nav-links left-links">
+       <li> <a href="index.html">Home</a></li>
+       <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="logo">
+            <img src="Assets/Premium Photo _ Ecology concept Power energy in nature hand holding lightbulb with solar with icons energy sources for renewable sustainable development.jpeg" alt="Logo" class="logo">
+        </div>
+        <ul class="nav-links right-links">
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="Ournanny.html">Solutions</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
+  <main class="contact-container">
+    <h1>Get in Touch</h1>
+    <p>We’re here to help you with any questions about our energy services, plans, or support. Reach out and let’s talk energy!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> support@brightvolt.com</p>
+        <p><strong>Phone:</strong> +1 (800) 123-4567</p>
+        <p><strong>Address:</strong> 45 Greenway Drive, Solar City, TX 75001</p>
+        <p><strong>Business Hours:</strong><br>Mon – Fri: 8am – 6pm</p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form id="messageForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="6" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>&copy; 2025 BrightVolt Energy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('messageForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Your message has been sent!');
+      this.reset();
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

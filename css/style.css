@@ -1,0 +1,836 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+}
+.navbar {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    gap: 2cm;
+    align-items: center;
+    margin:0.5cm;
+    margin-top: 0.1cm;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    position: sticky;
+  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap:1.5rem;
+}
+.nav-links li {
+    margin-right: 5px;
+}
+.nav-links a {
+    text-decoration: none;
+    color:#00A896; 
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    color: #e76f51;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001;
+    margin-left: auto; 
+}
+.logo {
+    height: 70px;
+    width: 100px;
+    align-items: center;
+}
+
+.clientcontainer {
+  max-width: 1300px;
+    margin: 3cm;
+    margin-top: 2cm;
+    display: flex;
+    border-top-right-radius: 5% 10%;
+    border-bottom-left-radius: 5% 10%;
+    border-top-left-radius: 5% 10%;
+    border-bottom-right-radius: 5% 10%;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    height: 73vh;
+    width: 90vw;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: url('../Assets/Affordable\ Solar\ Energy\ Solutions\ in\ Florida_\ Save\ Money\ and\ the\ Environment.jpeg');
+    background-size:26.2cm, 10.6cm;
+    background-size: cover;
+    font-size:32px ;
+    font-family: sans-serif;
+    color:black;
+    font-weight: bolder;
+}
+button {
+    background-color:yellow;
+    color:#00A896;
+    font-weight:bolder;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    justify-content: baseline;
+    justify-content: center;
+    
+}
+button:hover {
+    background-color:#ffcc00;;
+    color:#333333;
+  }
+.services{
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  background-color:white;
+  justify-self: center;
+
+}
+.service-cards{
+  display: flex;
+  justify-content: center;
+  gap:4cm;
+  flex-wrap: wrap;
+}
+#card1{
+  margin-left: 2cm;
+  height:15cm;
+  width:13cm;
+  background-color:#FFF3B0;
+}
+#card2{
+  margin-right: 2cm;
+  height:15cm;
+  width:13cm;
+  background-color:pink;
+}
+.card{
+  height:10.5cm;
+  width:10.5cm;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px;
+  padding: 2cm;
+  transition: transform 0.3s ease;
+
+}
+.card:hover{
+  transform: translateX(-10px);
+  cursor: pointer;
+}
+.card img{
+  width:100%;
+  height:80%;
+  border-radius: 10px;
+}
+.card p{
+  font-size: 32px;
+  color: #666;
+}
+.offer-container{
+    display: flex;
+    justify-self: center;
+    font-size:32px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    color:black;
+    font-family: Poppins;
+    background-color:white;
+    margin: 2cm;
+}
+#card-1{
+  margin-left: 2cm;
+  height:15cm;
+  width:13cm;
+  background-color: #FFF3B0;
+}
+#card-2{
+  margin-right: 2cm;
+  height:15cm;
+  width:13cm;
+  background-color: pink;
+}
+.option-container{
+    display: flex;
+    font-size:32px;
+    padding: 100px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+    color: rgb(4, 4, 97);
+    font-family: Poppins;
+    justify-self: center;
+}  
+  .testimonial-slider{
+    background-color:aliceblue;
+    max-width: 1200px;
+    margin: 1cm;
+    justify-self: center;
+    display: flex;
+    gap: 2cm;
+    align-items: flex-start;
+    padding: 2cm;
+    background-image: url('../Assets/Battery\ Operated\ USB\ Solar\ 40\ Lights\ LED\ Bulbs\ Outdoor\ String\ Lights\ -\ Dazuma\,\ USB\ Rechargeable.jpeg');
+  }
+  
+  .testimonial-intro {
+     flex: 1;
+     display: block;
+     margin-bottom: 20px;
+     text-align: center;
+  }
+  
+  .testimonial-intro h2 {
+    font-size: 40px;
+    color:#00A896;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-intro p {
+    color:black;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .slider-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .slider-btn {
+    background-color:#FFF6A3;
+    color:black;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  
+  .testimonial-track {
+    flex: 2;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .testimonial-card {
+    min-width: 9cm;
+    max-width: 9cm;
+    height: 9cm;
+    padding: 24px;
+    font-size: 29px;
+    border-radius: 24px;
+    color: #3f042d;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    line-height: 1.5;
+  }
+  
+  .testimonial-card span {
+    display: block;
+    margin-top: 16px;
+    font-weight: 600;
+    color:rgb(1, 1, 26);
+  }
+  
+  .peach {
+    background-color:#FFD3DA;
+    color: #2a2a72;
+    font-family: sans-serif;
+  }
+  
+  .teal {
+    background-color: #FFF3B0;
+    color:#00A896;;
+    font-family: Poppins;
+  }
+  
+  .testimonial-card.teal span {
+    color:#015a51; ;
+  }
+  .testimonial-track {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+.plan-container{
+    display: flex;
+    font-family: Poppins;
+    font-size:32px;
+    text-align: center;
+    padding: 100px;
+    justify-content: center;
+    color: #2a2a72;
+}
+.partners-container {
+  max-width: 1200px;
+  padding: 20px 20px;
+  margin: 1cm;
+  background-color: #f1f8f7;;
+  border-radius: 999px;
+  display: flex;
+  gap:3cm;
+  justify-self: center;
+  align-self: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.partners-title {
+  font-weight: bold;
+  font-size: 30px;
+  color:black;
+  white-space: nowrap;
+}
+.partners-container img {
+  height: 50px;
+  width: 130px;
+  object-fit: contain;
+}
+.power-container{
+  max-width: 1200px;
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+    margin: 3cm;
+    overflow: hidden;
+    font-size: 32px;
+    justify-content:space-between ;
+    padding:50px;
+    background-image: url('../my images/Book\ a\ LUXit\ professional\ for\ your\ next\ nanny….jpeg');
+    background-size: cover;
+}
+.residential{
+  background-color:#FFD3DA;
+  height : 44vh;
+  width: 33vw;
+  border-radius: 10%;
+  text-align: center;
+  margin: 1cm;
+  color: black;
+  font-family: Poppins;
+  padding: 1cm;
+}
+.commercial{
+  background-color: #FFF3B0;
+  height : 44vh;
+  width: 33vw ;
+  border-radius: 10%;
+  text-align: center;
+  margin: 1cm;
+    color:#00A896;
+  font-family: Poppins;
+  padding: 1cm;
+}
+ .customs{
+  background-color:#FFD3DA;
+  height: 44vh;
+  padding: 1cm;
+  width:33vw;
+  border-radius: 10%;
+  text-align: center;
+  margin: 1cm;
+  color: black;
+  font-family: Poppins;
+  }
+.Assurance{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1cm;
+    overflow: hidden;
+    font-size: 32px;
+    justify-content: center;
+    color:#2a2a72;
+
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .faq-left {
+    flex: 1 1 40%;
+    padding-right: 20px;
+  }
+  
+  .faq-left h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d2d35;
+    margin-bottom: 20px;
+  }
+  
+  .faq-left p {
+    color: #4a6c7a;
+    font-size: 29px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  .faq-image img {
+    max-width: 100%;
+    height: 80vh;
+    border-radius: 12px;
+  }
+  
+  .faq-right {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .faq-item {
+    background-color: #f1f8f7;
+    padding: 20px 24px;
+    border-radius: 12px;
+    font-size: 29px;
+    font-weight: 500;
+    color: #84d3db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .faq-item:hover {
+    background-color: #e1f3f1;
+  }
+  
+  .faq-item span {
+    font-size: 1.5rem;
+    color: #0c6466;
+  }
+  .faq-item {
+    background-color: #f1f8f7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: background 0.2s;
+  }
+  
+  .faq-question {
+    padding: 20px 24px;
+    font-size: 29px;
+    font-weight: 500;
+    color: #1a3c40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .faq-question span {
+    font-size: 29px;
+    color: #00A896;
+    transition: transform 0.3s;
+  }
+  
+  .faq-answer {
+    padding: 0 24px 20px 24px;
+    font-size: 29px;
+    color: #355c5e;
+    line-height: 1.5;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-item.active .faq-question span {
+    transform: rotate(45deg);
+  }
+    
+    @keyframes fadeIn {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+    }
+    .more-questions{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2cm;
+        font-size: 32px;
+        color: #2a2a72;
+        background-color: white;
+        text-align: center;
+    }
+ .footer-container{
+    display: flex;
+    background-color: honeydew;
+    gap :7cm;
+    justify-self: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 2cm;
+    }
+  .contact-section {
+     background-color: #fffdfb;
+     padding: 40px 30px;
+     border-radius:10%;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     padding-right: 33px;
+      height:52vh;
+      width:31vw;
+      list-style: none;
+  }
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  font-size:35px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 8px;
+  border: none;
+  border-bottom: 2px solid #072c2d;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #072c2d;
+  resize: none;
+  outline: none;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color:#2a2a72;
+   font-size: 29px;
+}
+.contact-form button {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: yellow;
+  color:#00A896;;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 29px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color:yellowgreen;
+}
+    .image4{
+      background-image: url('../Assets/Free\ \ Creative\,\ Light\,\ Bulb\ Background\ Images\,\ Creative\ Bulb\ Business\ People\ Business\ Background\ Material\ Photo\ Background\ PNG\ and\ Vectors.jpeg');
+      background-size: cover;
+       height:49vh;
+      width:31vw;
+      border-radius: 10%;
+      align-content: center;
+      font-size: 32px;
+      color: yellow;
+      padding: 1cm;
+    }
+    .contact{
+      padding: 48px;
+      padding-right: 33px;
+      background-color:whitesmoke;
+      height:49vh;
+      width:31vw;
+      border-radius: 10%;
+      color: #2a2a72;
+    }
+    #H2{
+      color:blue;
+      font-family: sans-serif;
+    }
+#successMessage {
+  margin-top: 15px;
+  color: green;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+   
+  .footer2-container{
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color:honeydew;
+    font-size: 32px;
+    gap:7cm;
+    color:#2a2a72;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 2cm;
+  
+    }
+    .Resources{
+      background-color:whitesmoke;
+      padding: 30px;
+      padding-right: 33px;
+      height:52vh;
+      width:31vw;
+      list-style: none;
+      border-radius: 10%;
+    }
+    
+    a{
+      outline:none;
+      text-decoration: none;
+      color:inherit;
+    }
+    a:visited,
+    a:focus,
+    a:active{
+      outline: none;
+      box-shadow: none;
+    }
+    h3{
+      color:#333333;
+    }
+@media screen  and (max-width: 768px) {
+  .contact-section {
+    width: auto;
+    height: auto;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: none;
+    margin-left: 1.5cm;
+  }
+
+  .contact-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact-section {
+    max-width: 8cm;
+  }
+
+  .contact-section h2 {
+    font-size: 29px;
+  }
+
+  .contact-form button {
+    font-size: 29px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1cm;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .clientcontainer {
+    flex-direction: column;
+    font-size: 20px;
+    margin: 1cm;
+    width: 95vw;
+    height: 50vh;
+    padding: 1rem;
+  }
+
+  .services, .offer-container, .power-container .plan-container {
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    margin:2cm;
+  }
+
+  .service-cards,.faq-container, .footer-container, .footer2-container,.power-container {
+    flex-direction:column;
+    gap: 1rem;
+  }
+  .footer-container, .footer2-container{
+    margin-left: 2cm;
+  }
+
+  .partners-container {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin: auto;
+  }
+
+  .testimonial-slider {
+    flex-direction: column;
+    flex-wrap:nowrap ;
+  }
+.testimonial-intro{
+  flex-direction:row;
+  flex-wrap: nowrap;
+}
+  .slider-buttons {
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .testimonial-track {
+    flex-wrap: nowrap;
+    overflow-x:auto;
+    padding-bottom: 1rem;
+  }
+
+  .testimonial-card {
+     width: 80vw;
+    height: auto;
+  }
+
+  .card, #card1, #card2, #card-1, #card-2, .Resources, .Jobs, .image4, .contact {
+    width: 95vw;
+    height: 95vh;
+    margin: 1cm;
+    padding-bottom: 0.5 rem;
+    font-size: 20px;
+    
+  }
+ .Resources,.image4{
+    width: 95vw;
+    height: 60vh;
+    margin: 1cm;
+    padding: 1rem;
+  }
+  .power-container >div{
+    width: 80vw;
+    height: auto;
+  }
+
+  .faq-left, .faq-right {
+    flex: 1 1 100%;
+  }
+
+  .faq-image img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .testimonial-intro h2 {
+    font-size: 22px;
+  }
+  .care-container{
+    margin: 1cm;
+  }
+
+  .testimonial-intro p,
+  .faq-left p,
+  .faq-answer,
+  .faq-question {
+    font-size: 18px;
+  }
+
+  .more-questions {
+    font-size: 24px;
+    padding: 1rem;
+  }
+
+  .partners-title {
+    font-size: 20px;
+  }
+
+  .partners-container img {
+    height: 30px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonial-slider,.testimonial-track {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  }

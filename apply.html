@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now – BrightVolt Energy</title>
+  <link rel="stylesheet" href="css/apply.css" type="text/css" />
+</head>
+<body>
+   <header>
+  <div class="container">
+   
+<nav>
+    <div class="navbar">
+       <button class="nav-toggle" id="navToggle">☰</button>
+        <ul class="nav-links left-links">
+       <li> <a href="index.html">Home</a></li>
+       <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="logo">
+            <img src="Assets/Premium Photo _ Ecology concept Power energy in nature hand holding lightbulb with solar with icons energy sources for renewable sustainable development.jpeg" alt="Logo" class="logo">
+        </div>
+        <ul class="nav-links right-links">
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="Ournanny.html">Solutions</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+  <main class="apply-container">
+    <h1>Apply Now</h1>
+    <p>Join our mission to power the future with clean energy.</p>
+    <form class="apply-form" action="submit-application.html" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="position">Position Applied For</label>
+      <select id="position" name="position" required>
+        <option value="">Select a position</option>
+        <option value="technician">Solar Technician</option>
+        <option value="sales">Sales Executive</option>
+        <option value="engineer">Energy Systems Engineer</option>
+        <option value="support">Customer Support</option>
+      </select>
+
+      <label for="resume">Resume (PDF only)</label>
+      <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+      <label for="message">Cover Letter</label>
+      <textarea id="message" name="message" rows="6" placeholder="Write your cover letter here..." required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>&copy; 2025 BrightVolt Energy. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>
